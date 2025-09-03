@@ -1,4 +1,4 @@
-# Ask the user for a filename
+# Ask the user for a filenamee
 filename = input("Enter the name of the file to read: ")
 
 try:
