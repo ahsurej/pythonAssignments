@@ -1,3 +1,4 @@
+# CLASS EXAMPLE;
 # Parent class
 class Book:
     def __init__(self, title, author, pages):
@@ -28,3 +29,31 @@ comic1 = ComicBook("Spider-Man", "Stan Lee", 45, "Steve Ditko")
 book1.read()
 comic1.read()
 print("Comic pages:", comic1.get_pages())  # Encapsulation example
+
+
+# POLYMORPHISM EXAMPLE;
+class Vehicle:
+    def move(self):
+        print("Vehicle is moving")
+
+class Car(Vehicle):
+    def move(self):
+        print("🚗 Car is driving")
+
+class Plane(Vehicle):
+    def move(self):
+        print("✈️ Plane is flying")
+
+class Boat(Vehicle):
+    def move(self):
+        print("🚢 Boat is sailing")
+
+# Creating a list of vehicles
+vehicles = [Car(), Plane(), Boat()]
+
+# Polymorphism in action
+for v in vehicles:
+    v.move()
+
+
+
